@@ -1,3 +1,4 @@
+
 .cards
 {
   display: flex;
@@ -29,3 +30,18 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.message
+{
+  width: 50vw;
+  height: 50vh;
+  background-color: grey;
+  color: red;
+  top: -20;
+}
+
+.hidden
+{
+  display: none;
+}
+

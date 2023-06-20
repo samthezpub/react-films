@@ -6,7 +6,7 @@ import AddFilms from './components/AddFilms';
 
 function App() {
   return (
-    <div className="App">
+    <div id='app' className="App">
       <h3>Films</h3>
       <div className='cards' id='cards'>
         {films.map((film) =>
@@ -16,6 +16,11 @@ function App() {
 
       <h3>Add</h3>
       <AddFilms />
+
+      <div id='container_other' className='message hidden'>
+          <p id='p_director'></p>
+          <p id='p_description'></p>
+      </div>
     </div>
   );
 }
