@@ -1,8 +1,19 @@
 import React from 'react';
 import films from '../films';
 import App from '../App';
+import { useState } from 'react';
+
+
 
 const AddFilms = (props) => {
+
+    const [name, setName] = useState("");
+    const [director, setDirector] = useState("");
+    const [description, setDescription] = useState("");
+    const [year, setYear] = useState("");
+    const [image, setImage] = useState("");
+
+
     function AddFilm() {
         let name = document.getElementById('name').value;
         let director = document.getElementById('director').value;
